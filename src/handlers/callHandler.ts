@@ -4,7 +4,6 @@ import fs from "fs-extra";
 import axios from "axios";
 import Web3 from "web3";
 import { AbiItem } from "web3-utils";
-import { Client } from "twilio/lib/twiml/VoiceResponse";
 
 const base_url = "https://api.assemblyai.com/v2";
 // Assembly AI headers to be added
@@ -46,6 +45,7 @@ export const handleRecording = async (
     const transcriptionResult = pollingResponse.data;
 
     if (transcriptionResult === "completed") {
+      // Twilio code to be added
     } else if (transcriptionResult.status === "error") {
       throw new Error(`Transcription failed: ${transcriptionResult.error}`);
     } else {
