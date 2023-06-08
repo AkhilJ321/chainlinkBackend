@@ -10,6 +10,7 @@ const base_url = "https://api.assemblyai.com/v2";
 const headers = { authorization: "ed92dc395436421f83dbb3660f48d237" };
 
 export const answerCall = (req: Request, res: Response) => {
+  console.log("hit");
   const resp = new VoiceResponse();
   resp.say(
     "Hello, this is AI the emergency helpline. Please state your name, current location, and describe your emergency situation, Cut the call when you are finished, Your request will be registered once you end the call and we will notify you as your request is registered."

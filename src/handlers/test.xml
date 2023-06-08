@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say>Hello, this is AI the emergency helpline. Please state your name, current location, and describe your emergency situation, Cut the call when you are finished, Your request will be registered once you end the call and we will notify you as your request is registered.</Say>
+    <Record maxLength="120" action="/handle-recording"/>
+    <Say>Thank you for your message. Goodbye.</Say>
+</Response>
